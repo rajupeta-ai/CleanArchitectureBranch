@@ -1,4 +1,4 @@
-﻿using CleanArchitecture.Domain.Entities;
+using CleanArchitecture.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -8,8 +8,6 @@ namespace CleanArchitecture.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<TodoItem> builder)
         {
-            builder.Ignore(e => e.DomainEvents);
-
             builder.Property(t => t.Title)
                 .HasMaxLength(200)
                 .IsRequired();

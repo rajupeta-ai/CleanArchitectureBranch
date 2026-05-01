@@ -1,6 +1,5 @@
-﻿using CleanArchitecture.Application.Common.Interfaces;
+using CleanArchitecture.Application.Common.Interfaces;
 using CleanArchitecture.Domain.Entities;
-using CleanArchitecture.Domain.Events;
 using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
@@ -31,8 +30,6 @@ namespace CleanArchitecture.Application.TodoItems.Commands.CreateTodoItem
                 Title = request.Title,
                 Done = false
             };
-
-            entity.DomainEvents.Add(new TodoItemCreatedEvent(entity));
 
             _context.TodoItems.Add(entity);
 
