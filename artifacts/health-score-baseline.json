@@ -1,0 +1,1022 @@
+{
+  "schemaVersion": 1,
+  "tool": "roslyn-equivalent-pattern-scanner",
+  "toolVersion": "1.0.0",
+  "rulesetId": "clean-architecture-baseline-v1",
+  "scanRoots": [
+    "src",
+    "tests"
+  ],
+  "filesAnalyzed": 97,
+  "overallScore": 66.6,
+  "targetScore": 80,
+  "severityWeights": {
+    "critical": 3,
+    "major": 1,
+    "minor": 0.2,
+    "info": 0
+  },
+  "summary": {
+    "byRule": {
+      "CA1031": 2,
+      "CA1051": 3,
+      "CA1812": 16,
+      "CA2007": 93,
+      "IDE0044": 2,
+      "S1075": 6,
+      "S125": 1
+    },
+    "bySeverity": {
+      "critical": 0,
+      "major": 11,
+      "minor": 112,
+      "info": 0
+    }
+  },
+  "violations": [
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Application/Common/Behaviours/AuthorizationBehaviour.cs",
+      "line": 48,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Application/Common/Behaviours/AuthorizationBehaviour.cs",
+      "line": 70,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Application/Common/Behaviours/AuthorizationBehaviour.cs",
+      "line": 81,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Application/Common/Behaviours/LoggingBehaviour.cs",
+      "line": 30,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Application/Common/Behaviours/PerformanceBehaviour.cs",
+      "line": 33,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Application/Common/Behaviours/PerformanceBehaviour.cs",
+      "line": 47,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Application/Common/Behaviours/UnhandledExceptionBehaviour.cs",
+      "line": 22,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA1031",
+      "severity": "major",
+      "file": "src/Application/Common/Behaviours/UnhandledExceptionBehaviour.cs",
+      "line": 24,
+      "column": 1,
+      "message": "catch (Exception) is too broad — catch a specific exception type"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Application/Common/Behaviours/ValidationBehaviour.cs",
+      "line": 27,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Application/Common/Behaviours/ValidationBehaviour.cs",
+      "line": 33,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA1051",
+      "severity": "major",
+      "file": "src/Application/Common/Models/PaginatedList.cs",
+      "line": 24,
+      "column": 1,
+      "message": "Public field 'HasPreviousPage' should be a property"
+    },
+    {
+      "ruleId": "CA1051",
+      "severity": "major",
+      "file": "src/Application/Common/Models/PaginatedList.cs",
+      "line": 26,
+      "column": 1,
+      "message": "Public field 'HasNextPage' should be a property"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Application/Common/Models/PaginatedList.cs",
+      "line": 30,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Application/Common/Models/PaginatedList.cs",
+      "line": 31,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Application/TodoItems/Commands/CreateTodoItem/CreateTodoItemCommand.cs",
+      "line": 39,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Application/TodoItems/Commands/DeleteTodoItem/DeleteTodoItemCommand.cs",
+      "line": 26,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Application/TodoItems/Commands/DeleteTodoItem/DeleteTodoItemCommand.cs",
+      "line": 35,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Application/TodoItems/Commands/UpdateTodoItem/UpdateTodoItemCommand.cs",
+      "line": 30,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Application/TodoItems/Commands/UpdateTodoItem/UpdateTodoItemCommand.cs",
+      "line": 40,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Application/TodoItems/Commands/UpdateTodoItemDetail/UpdateTodoItemDetailCommand.cs",
+      "line": 33,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Application/TodoItems/Commands/UpdateTodoItemDetail/UpdateTodoItemDetailCommand.cs",
+      "line": 44,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Application/TodoLists/Commands/CreateTodoList/CreateTodoListCommand.cs",
+      "line": 31,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Application/TodoLists/Commands/DeleteTodoList/DeleteTodoListCommand.cs",
+      "line": 39,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Application/TodoLists/Commands/PurgeTodoLists/PurgeTodoListsCommand.cs",
+      "line": 28,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Application/TodoLists/Commands/UpdateTodoList/UpdateTodoListCommand.cs",
+      "line": 28,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Application/TodoLists/Commands/UpdateTodoList/UpdateTodoListCommand.cs",
+      "line": 37,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Application/TodoLists/Queries/ExportTodos/ExportTodosQuery.cs",
+      "line": 43,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "IDE0044",
+      "severity": "minor",
+      "file": "src/Domain/Entities/TodoItem.cs",
+      "line": 25,
+      "column": 1,
+      "message": "Field '_done' could be readonly"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Infrastructure/Identity/IdentityService.cs",
+      "line": 29,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Infrastructure/Identity/IdentityService.cs",
+      "line": 42,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Infrastructure/Identity/IdentityService.cs",
+      "line": 51,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Infrastructure/Identity/IdentityService.cs",
+      "line": 58,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Infrastructure/Identity/IdentityService.cs",
+      "line": 60,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Infrastructure/Identity/IdentityService.cs",
+      "line": 71,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Infrastructure/Identity/IdentityService.cs",
+      "line": 79,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Infrastructure/Persistence/ApplicationDbContext.cs",
+      "line": 56,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Infrastructure/Persistence/ApplicationDbContext.cs",
+      "line": 58,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Infrastructure/Persistence/ApplicationDbContext.cs",
+      "line": 82,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Infrastructure/Persistence/ApplicationDbContextSeed.cs",
+      "line": 18,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Infrastructure/Persistence/ApplicationDbContextSeed.cs",
+      "line": 25,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Infrastructure/Persistence/ApplicationDbContextSeed.cs",
+      "line": 26,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Infrastructure/Persistence/ApplicationDbContextSeed.cs",
+      "line": 52,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA1051",
+      "severity": "major",
+      "file": "src/Infrastructure/Services/DateTimeService.cs",
+      "line": 8,
+      "column": 1,
+      "message": "Public field 'Now' should be a property"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "src/Infrastructure/Services/DomainEventService.cs",
+      "line": 25,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "IDE0044",
+      "severity": "minor",
+      "file": "src/WebUI/Controllers/ApiControllerBase.cs",
+      "line": 11,
+      "column": 1,
+      "message": "Field '_mediator' could be readonly"
+    },
+    {
+      "ruleId": "S1075",
+      "severity": "major",
+      "file": "src/WebUI/Filters/ApiExceptionFilterAttribute.cs",
+      "line": 58,
+      "column": 24,
+      "message": "Hardcoded absolute URI"
+    },
+    {
+      "ruleId": "S1075",
+      "severity": "major",
+      "file": "src/WebUI/Filters/ApiExceptionFilterAttribute.cs",
+      "line": 70,
+      "column": 24,
+      "message": "Hardcoded absolute URI"
+    },
+    {
+      "ruleId": "S1075",
+      "severity": "major",
+      "file": "src/WebUI/Filters/ApiExceptionFilterAttribute.cs",
+      "line": 84,
+      "column": 24,
+      "message": "Hardcoded absolute URI"
+    },
+    {
+      "ruleId": "S1075",
+      "severity": "major",
+      "file": "src/WebUI/Filters/ApiExceptionFilterAttribute.cs",
+      "line": 100,
+      "column": 24,
+      "message": "Hardcoded absolute URI"
+    },
+    {
+      "ruleId": "S1075",
+      "severity": "major",
+      "file": "src/WebUI/Filters/ApiExceptionFilterAttribute.cs",
+      "line": 117,
+      "column": 24,
+      "message": "Hardcoded absolute URI"
+    },
+    {
+      "ruleId": "S1075",
+      "severity": "major",
+      "file": "src/WebUI/Filters/ApiExceptionFilterAttribute.cs",
+      "line": 134,
+      "column": 24,
+      "message": "Hardcoded absolute URI"
+    },
+    {
+      "ruleId": "CA1812",
+      "severity": "minor",
+      "file": "src/WebUI/Program.cs",
+      "line": 14,
+      "column": 1,
+      "message": "Class 'Program' appears unreferenced outside its declaration file (possible dead code)"
+    },
+    {
+      "ruleId": "CA1031",
+      "severity": "major",
+      "file": "src/WebUI/Program.cs",
+      "line": 39,
+      "column": 1,
+      "message": "catch (Exception) is too broad — catch a specific exception type"
+    },
+    {
+      "ruleId": "S125",
+      "severity": "minor",
+      "file": "src/WebUI/Startup.cs",
+      "line": 129,
+      "column": 1,
+      "message": "Possible commented-out code"
+    },
+    {
+      "ruleId": "CA1812",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/CharacterizationTests/TodoListsApiTests.cs",
+      "line": 25,
+      "column": 1,
+      "message": "Class 'TodoListsApiTests' appears unreferenced outside its declaration file (possible dead code)"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/CharacterizationTests/TodoListsApiTests.cs",
+      "line": 31,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/CharacterizationTests/TodoListsApiTests.cs",
+      "line": 33,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/CharacterizationTests/TodoListsApiTests.cs",
+      "line": 48,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/CharacterizationTests/TodoListsApiTests.cs",
+      "line": 50,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/CharacterizationTests/TodoListsApiTests.cs",
+      "line": 51,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/CharacterizationTests/TodoListsApiTests.cs",
+      "line": 53,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/CharacterizationTests/TodoListsApiTests.cs",
+      "line": 71,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/CharacterizationTests/TodoListsApiTests.cs",
+      "line": 75,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/CharacterizationTests/TodoListsApiTests.cs",
+      "line": 80,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/CharacterizationTests/TodoListsApiTests.cs",
+      "line": 99,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/CharacterizationTests/TodoListsApiTests.cs",
+      "line": 111,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/CharacterizationTests/TodoListsApiTests.cs",
+      "line": 113,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/CharacterizationTests/TodoListsApiTests.cs",
+      "line": 122,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/CharacterizationTests/TodoListsApiTests.cs",
+      "line": 125,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/CharacterizationTests/TodoListsApiTests.cs",
+      "line": 148,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/CharacterizationTests/TodoListsApiTests.cs",
+      "line": 150,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/CharacterizationTests/TodoListsApiTests.cs",
+      "line": 153,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TestBase.cs",
+      "line": 13,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/Testing.cs",
+      "line": 85,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/Testing.cs",
+      "line": 90,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/Testing.cs",
+      "line": 95,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/Testing.cs",
+      "line": 106,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/Testing.cs",
+      "line": 114,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/Testing.cs",
+      "line": 117,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/Testing.cs",
+      "line": 134,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/Testing.cs",
+      "line": 145,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/Testing.cs",
+      "line": 157,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/Testing.cs",
+      "line": 166,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA1812",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoItems/Commands/CreateTodoItemTests.cs",
+      "line": 14,
+      "column": 1,
+      "message": "Class 'CreateTodoItemTests' appears unreferenced outside its declaration file (possible dead code)"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoItems/Commands/CreateTodoItemTests.cs",
+      "line": 28,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoItems/Commands/CreateTodoItemTests.cs",
+      "line": 41,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoItems/Commands/CreateTodoItemTests.cs",
+      "line": 43,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA1812",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoItems/Commands/DeleteTodoItemTests.cs",
+      "line": 14,
+      "column": 1,
+      "message": "Class 'DeleteTodoItemTests' appears unreferenced outside its declaration file (possible dead code)"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoItems/Commands/DeleteTodoItemTests.cs",
+      "line": 44,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA1812",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoItems/Commands/UpdateTodoItemDetailTests.cs",
+      "line": 17,
+      "column": 1,
+      "message": "Class 'UpdateTodoItemDetailTests' appears unreferenced outside its declaration file (possible dead code)"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoItems/Commands/UpdateTodoItemDetailTests.cs",
+      "line": 35,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoItems/Commands/UpdateTodoItemDetailTests.cs",
+      "line": 56,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoItems/Commands/UpdateTodoItemDetailTests.cs",
+      "line": 58,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA1812",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoItems/Commands/UpdateTodoItemTests.cs",
+      "line": 15,
+      "column": 1,
+      "message": "Class 'UpdateTodoItemTests' appears unreferenced outside its declaration file (possible dead code)"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoItems/Commands/UpdateTodoItemTests.cs",
+      "line": 33,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoItems/Commands/UpdateTodoItemTests.cs",
+      "line": 52,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoItems/Commands/UpdateTodoItemTests.cs",
+      "line": 54,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA1812",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoLists/Commands/CreateTodoListTests.cs",
+      "line": 13,
+      "column": 1,
+      "message": "Class 'CreateTodoListTests' appears unreferenced outside its declaration file (possible dead code)"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoLists/Commands/CreateTodoListTests.cs",
+      "line": 44,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoLists/Commands/CreateTodoListTests.cs",
+      "line": 51,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoLists/Commands/CreateTodoListTests.cs",
+      "line": 53,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA1812",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoLists/Commands/DeleteTodoListTests.cs",
+      "line": 13,
+      "column": 1,
+      "message": "Class 'DeleteTodoListTests' appears unreferenced outside its declaration file (possible dead code)"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoLists/Commands/DeleteTodoListTests.cs",
+      "line": 37,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA1812",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoLists/Commands/PurgeTodoListsTests.cs",
+      "line": 16,
+      "column": 1,
+      "message": "Class 'PurgeTodoListsTests' appears unreferenced outside its declaration file (possible dead code)"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoLists/Commands/PurgeTodoListsTests.cs",
+      "line": 32,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoLists/Commands/PurgeTodoListsTests.cs",
+      "line": 43,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoLists/Commands/PurgeTodoListsTests.cs",
+      "line": 54,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoLists/Commands/PurgeTodoListsTests.cs",
+      "line": 71,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoLists/Commands/PurgeTodoListsTests.cs",
+      "line": 73,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA1812",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoLists/Commands/UpdateTodoListTests.cs",
+      "line": 14,
+      "column": 1,
+      "message": "Class 'UpdateTodoListTests' appears unreferenced outside its declaration file (possible dead code)"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoLists/Commands/UpdateTodoListTests.cs",
+      "line": 57,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoLists/Commands/UpdateTodoListTests.cs",
+      "line": 70,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoLists/Commands/UpdateTodoListTests.cs",
+      "line": 72,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA1812",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoLists/Queries/GetTodosTests.cs",
+      "line": 13,
+      "column": 1,
+      "message": "Class 'GetTodosTests' appears unreferenced outside its declaration file (possible dead code)"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoLists/Queries/GetTodosTests.cs",
+      "line": 20,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.IntegrationTests/TodoLists/Queries/GetTodosTests.cs",
+      "line": 46,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA1812",
+      "severity": "minor",
+      "file": "tests/Application.UnitTests/Common/Behaviours/RequestLoggerTests.cs",
+      "line": 12,
+      "column": 1,
+      "message": "Class 'RequestLoggerTests' appears unreferenced outside its declaration file (possible dead code)"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.UnitTests/Common/Behaviours/RequestLoggerTests.cs",
+      "line": 35,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA2007",
+      "severity": "minor",
+      "file": "tests/Application.UnitTests/Common/Behaviours/RequestLoggerTests.cs",
+      "line": 45,
+      "column": 1,
+      "message": "await without ConfigureAwait(false) in library code"
+    },
+    {
+      "ruleId": "CA1812",
+      "severity": "minor",
+      "file": "tests/Application.UnitTests/Common/Exceptions/ExceptionHierarchyDeduplicationTests.cs",
+      "line": 16,
+      "column": 1,
+      "message": "Class 'ExceptionHierarchyDeduplicationTests' appears unreferenced outside its declaration file (possible dead code)"
+    },
+    {
+      "ruleId": "CA1812",
+      "severity": "minor",
+      "file": "tests/Application.UnitTests/Common/Exceptions/ValidationExceptionTests.cs",
+      "line": 10,
+      "column": 1,
+      "message": "Class 'ValidationExceptionTests' appears unreferenced outside its declaration file (possible dead code)"
+    },
+    {
+      "ruleId": "CA1812",
+      "severity": "minor",
+      "file": "tests/Application.UnitTests/Common/Mappings/MappingTests.cs",
+      "line": 11,
+      "column": 1,
+      "message": "Class 'MappingTests' appears unreferenced outside its declaration file (possible dead code)"
+    },
+    {
+      "ruleId": "CA1812",
+      "severity": "minor",
+      "file": "tests/Domain.UnitTests/ValueObjects/ColourTests.cs",
+      "line": 8,
+      "column": 1,
+      "message": "Class 'ColourTests' appears unreferenced outside its declaration file (possible dead code)"
+    }
+  ]
+}
