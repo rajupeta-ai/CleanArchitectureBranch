@@ -234,3 +234,12 @@ _Pvt_Extensions
 .fake/
 /NDependOut
 /CleanArchitecture.ndproj
+
+# Claude Code / SwarmBoard agent platform files
+.claude/
+.claudeignore
+CLAUDE.md
+HANDOFF-JOURNAL.md
+TICKET-CONTEXT.yaml
+.git-credential-helper.sh
+.mcp-config.json
